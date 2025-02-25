@@ -13,7 +13,7 @@ import os
 import datetime
 
 load_dotenv()
-reddit_user_agent = "discord-bot:v1.0 (by /u/bigmacstorm)"
+reddit_user_agent = ""
 
 class Job():
     def __init__(self, user_id, subreddit_name, channel_id):
@@ -177,7 +177,7 @@ class MyClient(discord.Client):
 async def main():
     reddit = asyncpraw.Reddit(client_id=os.environ.get('REDDIT_CLIENT_ID'),
                             client_secret=os.environ.get('REDDIT_CLIENT_SECRET'),
-                            user_agent=reddit_user_agent)
+                            user_agent=os.environ.get('REDDIT_USER_AGENT'))
 
     intents = discord.Intents.default()
     intents.message_content = True
