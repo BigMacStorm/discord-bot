@@ -31,7 +31,7 @@ This Discord bot allows users to subscribe to subreddits and receive notificatio
 1.  Clone the repository:
 
     ```bash
-    git clone [https://github.com/bigmacstorm/discord-bot.git](https://github.com/bigmacstorm/discord-bot.git)
+    git clone https://github.com/bigmacstorm/discord-bot.git
     ```
 
 2.  Navigate to the project directory:
